@@ -6,329 +6,80 @@ light - #F7F7F7
 dark - #131313  
 */
 
-.body {
-    font-family: hiragino-kaku-gothic-pron, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-}
-    
-::selection {
-    background: #FF5757;
-  }
-
-a {
-    color: #FF5757;
-    text-decoration: none;
+html {
+    box-sizing: border-box;
 }
 
-/* a:hover {
-    text-decoration: none;
-    color: #F7F7F7;
-} */
-
-/* 
-a:visited {
-    text-decoration: none;
-    color: #F7F7F7;
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 
-a:visited:hover {
-    text-decoration: none;
-    color: #E4FF1A;
-} */
-
-.text-color-main {
-    color:#FF5757;
-}
-
-.text-color-secondary {
-    color: #F7F7F7;
-}
-
-.text-color-alternative {
-    color: #E4FF1A;
-}
-
-.text-color-light {
-    color: #F7F7F7;
-}
-
-.text-color-dark {
-    color: #131313;
-}
-
-.background-color-main {
-    background-color:#FF5757
-}
-
-.background-color-light {
-    background-color: #F7F7F7;
-}
-
-.background-color-dark {
+body {
     background-color: #131313;
-}
-
-.navbar {
-    padding-top: 40px;
-    font-family: owners, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.navbar li a {
-    color: #131313;
-}
-
-.navbar li a:hover {
     color: #E4FF1A;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Monaco, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px 10px;
+    /* height: 100vh; */
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus,
-.navbar-toggler[aria-expanded="true"],
-.navbar-toggler {
-    border: none;
-    box-shadow: none;
+ul, p, h1 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
 }
 
-/* .navbar-toggler-icon {
-    background-image: none;
-  }
-    .navbar-toggler-icon {
-    background-image: url(../img/icons/hamburger-1.svg);
-  } */
-
-#offcanvas-social-media {
-    margin-top: 30%;
-    font-size: 25px !important;
+img {
+    display: block;
 }
 
-#orsaykural-logo {
-    max-width: 100px;
+.container {
+    display: inline-flex;
+    flex: 1;
+    align-items: center;
 }
 
-.section-header {
-    padding-bottom: 140px;
+h1 {
+    font-size: 15px;
 }
 
-.section-title {
-    font-family: ff-more-web-pro-condensed, serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 150px;
+.at{
+    padding: 2px;
 }
 
-.section-description {
-    font-family: ff-more-web-pro-condensed, serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 40px;
+.comingsoon {
+    padding: 0 5px;
+}
+.email:hover {
+    cursor: pointer;
 }
 
-.thumbnails-title {
-    font-family: hiragino-kaku-gothic-pron, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 22px;
-}
-
-#hello {
-    font-family: ff-more-web-pro-condensed, serif;
-    font-weight: 300;
-    font-style: normal;
-    padding: 60px 12px 140px 12px !important;
-    font-size: 65px;
-}
-
-#works {
-    background-color: #E4FF1A;
-    padding: 140px 12px 140px 12px !important;
-}
-
-.work-main-image {
-    margin-bottom: 10px;
-}
-
-.work-main-image img {
-    width: 100%;
-}
-
-.desc {
-    font-size: 14px;
-}
-
-#contact {
-    padding: 140px 12px 40px 12px !important;
-}
-
-#contact-email {
-    padding: 40px 0 140px 0;
-    font-size: 100px;
-    color: #FFEED3;
-}
-
-#contact-email a {
-    color: #FFEED3;
-}
-
-#contact-email a:hover {
-    color:#E4FF1A;
-}
-/* 
-#contact,
-.main-page-footer {
-    color:#E4FF1A;
-    background-color: #131313;
-} */
-
-footer .footer-list li,
-footer .footer-list li a,
-#copyright p,
-#copyright p a {
-    color: #131313;
-}
-
-
-footer .footer-list li a:hover,
-#copyright p a:hover {
-    color: #E4FF1A;
-}
-
-.footer-menu {
-    padding-top: 40px;
-}
-
-.footer-list-title {
-    font-family: ff-more-web-pro-condensed, serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    color: #FFEED3;
-}
-
-#back-to-top {
-    color: #F7F7F7;
-}
-
-#copyright {
-    padding-top: 40px;
-}
-
-@media only screen and (max-width: 1200px) {
-    #hello {
-        font-size: 45px;
-        padding: 60px 12px 120px 12px !important;
+@keyframes blink {
+    0% {
+        opacity: 1;
     }
-
-    #works {
-        padding: 120px 12px 120px 12px !important;
+    50% {
+        opacity: 0;
     }
-
-    #contact {
-        padding: 120px 12px 40px 12px !important;
-    }
-
-    #contact-email {
-        font-size: 80px;
+    100% {
+        opacity: 1;
     }
 }
 
-@media only screen and (max-width: 992px) {
-    .navbar {
-        padding-top: 30px;
-    }
-
-    #hello {
-        font-size: 35px;
-        padding: 40px 12px 100px 12px !important;
-    }
-    
-    #works {
-        padding: 40px 12px 100px 12px !important;
-    }
-
-    .section-header {
-        padding-bottom: 100px;
-    }
-
-    .section-title {
-        font-size: 100px;
-    }
-    
-    .section-description {
-        font-size: 30px;
-    }
-
-    #contact {
-        padding: 40px 12px 40px 12px !important;
-    }
-    
-    #contact-email {
-        font-size: 65px;
-        padding: 40px 0 100px 0;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    #hello {
-        font-size: 30px;
-        padding: 40px 12px 80px 12px !important;
-    }
-
-    #works {
-        padding: 40px 12px 80px 12px !important;
-    }
-
-    .section-header {
-        padding-bottom: 80px;
-    }
-
-    .title {
-        font-size: 18px;
-    }
-
-    .desc {
-        font-size: 10px;
-    }
-
-    #contact {
-        padding: 40px 12px 20px 12px !important;
-    }
-
-    #contact-email {
-        font-size: 50px;
-        padding: 40px 0 60px 0;
-    }
-}
-
-@media only screen and (max-width: 576px) {
-    .navbar {
-        padding-top: 20px;
-    }
-    
-    .section-header {
-        padding-bottom: 40px;
-    }
-
-    #contact {
-        padding: 40px 12px 10px 12px !important;
-    }
-
-    #contact-email {
-        font-size: 35px;
-        padding: 40px 0 40px 0;
-    }
-
-    .footer-menu {
-        text-align: center !important;
-    }
-}
-
-@media only screen and (max-width: 320px) {
-
-    #contact-email {
-        font-size: 20px;
-    }
+.cursor {
+    display: inline-block;
+    width: 7px; /* Adjust the width to match your desired cursor size */
+    height: 15px; /* Adjust the height to match your desired cursor size */
+    background-color: #797979; /* Cursor color */
+    animation: blink 1s infinite; /* 1s is the blink duration */
 }
